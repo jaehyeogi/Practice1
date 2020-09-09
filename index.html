@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Course Dashboard</title>
+</head>
+<body>
+    <nav>
+        <div class="navigation">
+            <span class="nav-logo">O</span>
+            <span class="nav-title">Ohara</span>
+        </div>
+        <div class="nav-button">
+            <a href="#">
+                Join a course
+            </a>
+        </div>
+        <ul class="menu-list">
+            <li class="nav-dashboard">
+                <a href="#" class="nav-menu">
+                    <img  src="./src/images/dashboard.svg" alt="dashboard icon" class="nav-dashboard-img"> 
+                    Dashboard
+                </a>
+            </li>
+            <li class="nav-courses">
+                <a href="#" class="nav-menu">
+                    <img  src="./src/images/courses.svg" alt="courses icon" class="nav-courses-img">
+                    All courses
+                </a>
+            </li>
+            <li class="nav-resources">
+                <a href="#" class="nav-menu">
+                    <img src="./src/images/resources.svg" alt="resources icon" class="nav-resources-img">
+                    Resources
+                </a>
+            </li>
+            <li class="nav-friends">
+                <a href="#" class="nav-menu">
+                    <img src="./src/images/friends.svg" alt="friends list icon" class="nav-friends-img">
+                    Friends
+                </a>
+            </li>
+            <li class="nav-chat">
+                <a href="#" class="nav-menu">
+                    <img src="./src/images/chats.svg" alt="chat lists icon" class="nav-chat-img">
+                    Chats
+                </a>
+            </li>
+            <li class="nav-settings">
+                <a href="#">
+                    <img src="./src/images/settings.svg" alt="settings icon" class="nav-settings-img">
+                    Settings
+                </a>
+            </li>
+        </ul>
+        <div class="upgrade-box">
+            <img src="./src/images/uploadfiles.svg" alt="" class="nav-upload-img">
+            <p>
+                Upgrade to for </br>more resources
+            </p>
+            <a href="#" class="nav-button upgrade">Upgrade</a>
+        </div>
+    </nav>
+    <main>
+        <header>
+
+            </div>
+            <div class="search">
+                <input type="text" class="search-box" placeholder="search">
+                <input type="checkbox" class="notification" id="notification" >
+                <label for="notification" class="notification-label"></label>
+            </div>
+            <div class="main-content">
+                <strong>All courses</strong>
+                <div class="main-content-nav">
+                    <div class="main-content-state">
+                        <a href="#">Ongoing</a>
+                        <div></div>
+                    </div>
+                    <div class="main-content-state">
+                        <a href="#">Favorite</a>
+                        <div></div>
+                    </div>
+                    <div class="main-content-state">
+                        <a href="#">Complete</a>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="img-box">
+            <div class="design-box">
+                <div class="img-slidebox">
+                    <div class="first-img item active">
+                        <img src="./src/images/1.PNG" alt="course image">
+                        <strong class="img-title first">UI/UX Design1</strong>
+                        <span class="img-time first">2h 20min</span>
+                        <span class="img-lesson first">20 lessons</span>
+                        <a href="">
+                            <div class="user-img first"></div>
+                        </a>
+                    </div>
+                    <div class="first-img item">
+                        <img src="./src/images/2.PNG" alt="course image">
+                        <strong class="img-title first">UI/UX Design2</strong>
+                        <span class="img-time first">2h 30min</span>
+                        <span class="img-lesson first">30 lessons</span>
+                        <a href="">
+                            <div class="user-img first"></div>
+                        </a>
+                    </div>
+                    <div class="first-img item">
+                        <img src="./src/images/3.PNG" alt="course image">
+                        <strong class="img-title first">UI/UX Design3</strong>
+                        <span class="img-time first">1h 20min</span>
+                        <span class="img-lesson first">10 lessons</span>
+                        <a href="">
+                            <div class="user-img first"></div>
+                        </a>
+                    </div>
+                </div>
+                <button type="button" class="img-next left" id="course-button-left"></button>
+                <button type="button" class="img-next right" id="course-button-right"></button>
+            </div>         
+            <div class="course-box">
+                <div class="photography-box">
+                    <div class="img-slidebox" id="photo-slideBox">
+                        <div class="second-img item active">
+                            <img src="./src/images/2.PNG" alt="course image">
+                            <strong class="img-title second">Photography</strong>
+                            <span class="img-time second">1h 30min</span>
+                            <span class="img-lesson second">12 lessons</span>
+                            <a href="">
+                                <div class="user-img second"></div>
+                            </a>
+                        </div>
+                        <div class="second-img item">
+                            <img src="./src/images/3.PNG" alt="course image">
+                            <strong class="img-title second">Photography</strong>
+                            <span class="img-time second">1h 30min</span>
+                            <span class="img-lesson second">12 lessons</span>
+                            <a href="">
+                                <div class="user-img second"></div>
+                            </a>
+                        </div>
+                        <div class="second-img item">
+                            <img src="./src/images/1.PNG" alt="course image">
+                            <strong class="img-title second">Photography</strong>
+                            <span class="img-time second">1h 30min</span>
+                            <span class="img-lesson second">12 lessons</span>
+                            <a href="">
+                                <div class="user-img second"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <button type="button" class="img-next left second" id="photography-button-left"></button>
+                    <button type="button" class="img-next right second" id="photography-button-right"></button>
+                </div>
+                <div class="animation-box">
+                    <div class="img-slidebox" id="animation-slideBox">
+                        <div class="third-img item active">
+                            <img src="./src/images/3.PNG" alt="course image">
+                            <strong class="img-title third">Animation</strong>
+                            <span class="img-time third">2h 20min</span>
+                            <span class="img-lesson third"> 20 lessons</span>                        
+                            <a href="">
+                                <div class="user-img third"></div>
+                            </a>
+                        </div>
+                        <div class="third-img item">
+                            <img src="./src/images/1.PNG" alt="course image">
+                            <strong class="img-title third">Animation</strong>
+                            <span class="img-time third">2h 20min</span>
+                            <span class="img-lesson third"> 20 lessons</span>                        
+                            <a href="">
+                                <div class="user-img third"></div>
+                            </a>
+                        </div>
+                        <div class="third-img item">
+                            <img src="./src/images/2.PNG" alt="course image">
+                            <strong class="img-title third">Animation</strong>
+                            <span class="img-time third">2h 20min</span>
+                            <span class="img-lesson third"> 20 lessons</span>                      
+                            <a href="">
+                                <div class="user-img third"></div>
+                            </a>
+                        </div>  
+                    </div>
+                    <button type="button" class="img-next left second" id="animation-button-left"></button>
+                    <button type="button" class="img-next right second" id="animation-button-right"></button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <aside>
+        <header class="aside-header">
+            <img src="./src/images/user.png" alt="current user image">
+            <h1>Alexa Rogue</h1>
+            <button type="button" aria-label="Options" class="aside-option"> 
+            </button>
+            <div class="option-content">
+                <ul class="option-down">
+                    <li class="option-list">
+                        <a href="">User profile</a>
+                    </li>
+                    <li class="option-list">
+                        <a href="">My courses</a>
+                    </li>
+                    <li class="option-list">
+                        <a href="">Friends</a>
+                    </li>
+                    <li class="option-list">
+                        <a href="">Settings</a>
+                    </li>
+                </ul>
+            </div>            
+        </header>
+        <div class="progress">
+            <h1 class="aside-title">Progress</h1>
+            <div class="aside-design">
+                <a href="#" class="aside-list">
+                    <img src="./src/images/progress1.PNG" alt="progress icon" class="aside-img">
+                    <div class="aside-info">
+                        <strong class="aside-content">UI/UX Design</strong>
+                        <span class="aside-state">Advanced</span>
+                    </div>
+                    <span class="aside-bar design"></span>
+                </a>
+                <a href="#" class="aside-list">
+                    <img src="./src/images/progress2.PNG" alt="progress icon" class="aside-img">
+                    <div class="aside-info">
+                        <strong class="aside-content">Photography</strong>
+                        <span class="aside-state">Intermediate</span>
+                    </div>
+                    <span class="aside-bar photography"></span>
+                </a>
+                <a href="#" class="aside-list">
+                    <img src="./src/images/progress3.PNG" alt="progress icon" class="aside-img">
+                    <div class="aside-info">
+                        <strong class="aside-content">Animation</strong>
+                        <span class="aside-state">Advanced</span>
+                    </div>
+                    <span class="aside-bar animation"></span>
+                </a>
+            </div>
+        </div>
+        <div class="upcoming-task">
+            <h1 class="aside-title">Upcoming Task</h1>
+            <div class="aside-design">
+                <a href="#" class="aside-list">
+                    <img src="./src/images/progress1.PNG" alt="progress icon" class="aside-img">
+                    <div class="aside-info task">
+                        <strong class="aside-content task">UI/UX Design</strong>
+                        <span class="aside-state">27 Oct 2020, Tuesday</span>
+                    </div>
+                </a>
+                <a href="#" class="aside-list">
+                    <img src="./src/images/progress2.PNG" alt="progress icon" class="aside-img">
+                    <div class="aside-info task">
+                        <strong class="aside-content task">Animation - 3D Animation</strong>
+                        <span class="aside-state">27 Oct 2020, Tuesday</span>
+                    </div>
+                </a>
+            </div>                
+        </div>
+        <div class="aside-down">
+            <img src="./src/images/task.PNG" alt="download ad" class="aside-down-img">
+            <strong class="aside-down-text">Download Ohara </br>Now!</strong>
+            <a href="" class="aside-down-link googleplay">
+                <img src="./src/images/googleplay.png" alt="googleplay link">
+            </a>
+            <a href="" class="aside-down-link apple">
+                <img src="./src/images/apple.png" alt="applestore link">
+            </a>
+        </div>
+    </aside>
+    <script src="./slider.js"></script>
+</body>
+</html>
