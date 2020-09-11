@@ -217,6 +217,7 @@ main {
     font-size: 15px;
     line-height: 1.2;
     color: #CCD6E8;
+    position: relative;
 }
 
 .notification {
@@ -264,7 +265,8 @@ main {
 .main-content-nav {
     display: flex;
 }
-.main-content-state{
+
+.main-content-state {
     margin-right: 51px;
     font-weight: 600;
     font-size: 17px;
@@ -272,7 +274,7 @@ main {
     color: rgba(118, 132, 146, 0.8);
 }
 
-.main-content-state:last-child{
+.main-content-state:last-child {
     margin-right: 0;
 }
 
@@ -287,7 +289,6 @@ main {
     display: inline-block;
     margin-bottom: 7px;
 }
-
 
 .main-content-state > a + div {
     width: 18px;
@@ -424,14 +425,13 @@ main header {
     cursor: pointer;
 }
 
-
-
 .img-next.left {
     position: absolute;
     bottom: 37px;
     left: 37px; 
     z-index:2;
 }
+
 .img-next.right{
     position: absolute;
     bottom: 37px;
@@ -451,7 +451,6 @@ main header {
     bottom: 37px;
     background-image: url('./src/images/me.jpg') ;
 }
-
 
 .course-box {
     height: 306px;
@@ -551,7 +550,6 @@ aside header h1 {
 	100%{top:0}
 }
 
-
 .option-down {
     width: 120px;
     background-color: rgba(94, 129, 244, 0.8);
@@ -597,6 +595,7 @@ aside header h1 {
 .progress{
     margin-bottom: 64px;
 }
+
 .aside-list{
     margin-bottom: 27px;
     position: relative;
@@ -707,7 +706,7 @@ aside header h1 {
     left: 80px;
 }
 
-/* <= 768px (mobile) */
+/* <= 320px (mobile) Iphone SE*/
 @media screen and (max-width: 768px){
     body{
         display: flex;
@@ -717,25 +716,172 @@ aside header h1 {
       /* nav */
       nav{
           order: 2;
+          width: 320px;
       }
 
       /* main */
       main{
           order: 1;
+          width: 320px;
+          height: 900px;
+          padding: 20px 10px;
       }
-      /* .course-box {
+
+      .search { 
+          margin-bottom: 25px;
+      }
+
+      .search-box {
+        /* width: 472px; */
+        position: relative;
+    }
+    
+      .notification {
+        position: absolute;
+        top: 105px;
+        left: 280px;
+    }
+    
+      .notification-label {
+        position: absolute;
+        top: 105px;
+        left: 280px;
+      }
+
+      .main-content {
         flex-direction: column;
+        align-items: start;
+      }
+
+      .main-content strong{
+        margin-bottom: 15px;
+      }
+
+      .main-content-state {
+          margin-right: 22px;
+      }
+
+      .img-box {
+          width: 300px;
+      }
+
+      .img-slidebox {
+        width: 300px;
+        height: 221px;
+        margin: 0;
+      }
+
+      .img-slidebox > div {
+        width: 300px;
+      }
+
+      .img-slidebox > div > img {
+        width: 300px;
+      }
+
+      .img-slidebox > div > img {
+        width: 300px;
+      }
+
+      .first-img.item.active,
+      .second-img.item.active,
+      .third-img.item.active {
+        width:300px;
+        display: block;
+        height: auto;
+    }
+
+      .first-img.item.active img,
+      .second-img.item.active img,
+      .third-img.item.active img {
+        width:300px;
+        display: block;
+        height: auto;
+        }
+
+      .design-box .img-slidebox{
+        height: 124px;
+      }
+
+      .course-box {
+        flex-direction: column;
+        width: 300px;
+        height: 483px;
       } 
 
-      .photography-box {
-          width: 100%;
-      }
-      .photography-box{
+      .photography-box,
+      .animation-box {
         width: 100%;
-    } */
-
-      /* aside */
-      aside{
-          order: 3;
+        height: 221px;
+        margin-right: 0;
+        margin-bottom: 41px;
       }
+
+      .animation-box {
+        margin-bottom: 0;
+      }
+
+      .img-title.first,
+      .img-title.second,
+      .img-title.third {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+      }
+
+      .img-lesson.first,
+      .img-lesson.second,
+      .img-lesson.third {
+        position: absolute;
+        top: 35px;
+        left: 15px;
+      }
+
+      .img-time.first,
+      .img-time.second,
+      .img-time.third {
+        position: absolute;
+        top: 38px;
+        left: 110px;
+      }
+
+      .img-time.first::before,
+      .img-time.second::before,
+     .img-time.third::before {
+        content: '/ ';
+      }
+
+      .user-img {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+      }
+
+      .img-next.left {
+        position: absolute;
+        bottom: 15px;
+        left: 15px; 
+        background-color: transparent;
+      }
+
+      .img-next.right{
+        position: absolute;
+        bottom: 15px;
+        left: 40px;
+        background-color: transparent;
+      }
+
+    /* aside */
+      aside {
+        order: 3;
+        width: 320px;
+      }
+
+      .aside-header h1 {
+        margin-right: 30px;
+     }
+ 
+    .aside-down > img{
+        width: 256px;
+    }
 }
